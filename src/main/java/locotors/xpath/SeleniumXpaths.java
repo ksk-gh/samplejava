@@ -40,8 +40,12 @@ public class SeleniumXpaths {
 			System.out.println(textVerify+" text is not present");
 		}
 		
+		System.out.println("TEST");
+		
+		
 		driver.findElement(By.xpath("//button[contains(@class,'logout')]")).click();
 		driver.close();
+		
 
 
 }
