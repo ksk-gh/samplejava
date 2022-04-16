@@ -1,4 +1,4 @@
-package locotors.xpath;
+package locators.xpath;
 
 import java.time.Duration;
 import java.util.List;
@@ -46,8 +46,6 @@ public class SeleniumXpaths {
 		driver.findElement(By.xpath("//button[contains(@class,'logout')]")).click();
 		driver.close();
 		
-
-
 }
 }
 
