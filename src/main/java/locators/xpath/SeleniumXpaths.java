@@ -46,8 +46,6 @@ public class SeleniumXpaths {
 		driver.findElement(By.xpath("//button[contains(@class,'logout')]")).click();
 		driver.close();
 		
-
-
 }
 }
 
