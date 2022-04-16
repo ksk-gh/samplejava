@@ -21,11 +21,14 @@ public class SeleniumXpaths {
 		driver.manage().window().maximize(); // Maximize the opened chrome browser window
 		driver.get("https://rahulshettyacademy.com/locatorspractice/"); // Loads the URL in the opened browser
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
 
 		driver.findElement(By.xpath("//h1[text()='Sign in']/following-sibling::input[1]")).sendKeys("karthi");
 		driver.findElement(By.xpath("//div[@class='checkbox-container']/preceding-sibling::input[1]")).sendKeys("rahulshettyacademy");	
 		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
+		//driver.findElement(By.linkText("Sign In")).click();
+		
 		//WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(120,1));
 		
 		WebDriverWait wait = new WebDriverWait(driver,30);
